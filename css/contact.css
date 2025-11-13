@@ -196,14 +196,12 @@
   text-align: center;
 }
 
-/* -------------------------------------------------
-   RESPONSIVE
-   ------------------------------------------------- */
 @media (max-width: 900px) {
   .contact-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
   }
+
   .head-office-card {
     grid-column: auto;
   }
@@ -211,18 +209,56 @@
 
 @media (max-width: 600px) {
   .contact-container {
-    padding: 20px 0;
+    padding: 30px 16px;
   }
+
   .contact-form-card,
   .contact-info,
   .head-office-card {
-    padding: 24px;
+    padding: 28px 20px;
+    border-radius: 16px;
   }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
   .info-card {
     flex-direction: column;
     text-align: center;
   }
+
   .info-icon {
-    margin: 0 auto;
+    margin: 0 auto 8px;
+  }
+
+  .map-placeholder {
+    padding: 28px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-form-card,
+  .contact-info,
+  .head-office-card {
+    padding: 24px 16px;
+  }
+
+  .btn-send {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
   }
 }

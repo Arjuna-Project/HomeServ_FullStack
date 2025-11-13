@@ -181,24 +181,53 @@
 @media (max-width: 900px) {
   .booking-options {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 28px;
   }
+
   .section-header h2 {
-    font-size: 24px;
+    font-size: 1.6rem;
+  }
+
+  .booking-card {
+    padding: 28px;
   }
 }
 
 @media (max-width: 600px) {
   .booking-type-container {
-    padding: 20px 0;
+    padding: 30px 16px;
   }
-  .booking-card {
-    padding: 24px;
-  }
+
   .price {
     font-size: 28px;
   }
+
+  .card-icon {
+    width: 64px;
+    height: 64px;
+    font-size: 28px;
+  }
+
   .action-center {
-    margin-top: 32px;
+    margin-top: 36px;
+  }
+
+  .btn-continue {
+    font-size: 15px;
+    padding: 12px 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .booking-card {
+    padding: 24px 16px;
+  }
+
+  .price {
+    font-size: 26px;
+  }
+
+  .features li {
+    font-size: 13px;
   }
 }

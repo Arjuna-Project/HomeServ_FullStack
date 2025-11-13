@@ -157,14 +157,53 @@
   box-shadow: 0 6px 16px rgba(16, 185, 129, 0.3);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .datetime-card {
+    padding: 32px 24px;
+  }
+
   .time-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .datetime-card {
-    padding: 24px;
+}
+
+@media (max-width: 600px) {
+  .datetime-container {
+    padding: 30px 16px;
   }
+
   .section-header h2 {
-    font-size: 24px;
+    font-size: 1.6rem;
+  }
+
+  .datetime-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .date-group label,
+  .time-group label {
+    font-size: 15px;
+  }
+
+  .time-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .btn-continue {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .date-btn {
+    font-size: 13px;
+    padding: 10px 14px;
   }
 }

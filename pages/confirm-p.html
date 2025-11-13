@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Packages – HomeServ</title>
+  <title>Package Confirmed – HomeServ</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/my-packages.css">
+  <link rel="stylesheet" href="../css/booking-confirm.css">
 </head>
-
-<body class="my-packages-page">
+<body class="confirm-page">
   <header>
     <div class="container header-inner">
       <a href="../index.html" class="logo">HomeServ</a>
@@ -24,17 +23,30 @@
     </div>
   </header>
 
-  <main class="packages-container">
+  <main class="confirm-container">
     <div class="container">
-      <div class="section-header">
-        <a href="../pages/profile.html" class="back-link">
-          <i class="fas fa-arrow-left"></i> Back
-        </a>
-        <h2>My Packages</h2>
-      </div>
+      <div class="confirm-content">
+        <div class="checkmark-circle">
+          <i class="fas fa-check"></i>
+        </div>
 
-      <div class="empty-state">
-        <p>There are No Packages Booked Yet.</p>
+        <h2>Booking Confirmed!</h2>
+        <p>Your booking has been successfully placed. You will receive a confirmation call shortly.</p>
+
+        <div class="details-card">
+          <h3>Booking Details</h3>
+          <ul>
+            <li><strong>Area:</strong> Guindy</li>
+            <li><strong>Type:</strong> SSC 3 Star Package</li>
+            <li><strong>Amount:</strong> ₹4999</li>
+            <li><strong>Booking ID:</strong> HS54871</li>
+          </ul>
+        </div>
+
+        <div class="action-buttons">
+          <a href="../pages/my_packages.html" class="btn-primary">View My Packages</a>
+          <a href="../index.html" class="btn-secondary">Back to Home</a>
+        </div>
       </div>
     </div>
   </main>

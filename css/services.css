@@ -37,12 +37,14 @@
   margin: 0;
 }
 
+/* ---- GRID ---- */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
+/* ---- CARD ---- */
 .service-card {
   background: #ffffff;
   border-radius: 16px;
@@ -51,7 +53,7 @@
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
 }
 
 .service-card:hover {
@@ -59,21 +61,11 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 
-.service-icon {
-  font-size: 14px;
-  font-weight: 500;
-  color: #3b82f6;
-  background: #ebf4ff;
-  padding: 6px 12px;
-  border-radius: 8px;
-  align-self: flex-start;
-  margin-bottom: 12px;
-}
-
 .service-card h3 {
   font-size: 18px;
   font-weight: 600;
   color: #1e293b;
+  text-align: center;
   margin: 0 0 8px 0;
 }
 
@@ -82,13 +74,14 @@
   color: #64748b;
   margin: 0 0 12px 0;
   line-height: 1.5;
-  flex-grow: 1;
+  text-align: center;
 }
 
 .price-badge {
   font-size: 14px;
   color: #10b981;
-  margin-bottom: 12px;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 .price-badge strong {
@@ -96,17 +89,20 @@
   font-weight: 600;
 }
 
+/* ---- BUTTON ---- */
 .btn-view {
   background: #3b82f6;
   color: white;
   font-weight: 500;
   font-size: 14px;
-  padding: 8px 16px;
+  padding: 10px 22px;
   border-radius: 999px;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
-  align-self: flex-start;
+  align-self: center;
+  margin-top: auto;
+  min-width: 130px;
 }
 
 .btn-view:hover {
@@ -114,6 +110,7 @@
   transform: translateY(-2px);
 }
 
+/* ---- RESPONSIVE ---- */
 @media (max-width: 1200px) {
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -130,13 +127,40 @@
 }
 
 @media (max-width: 600px) {
+  .services-container {
+    padding: 30px 16px;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .services-container {
-    padding: 20px 0;
-  }
+
   .service-card {
-    padding: 16px;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+
+  .btn-view {
+    font-size: 13.5px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-card h3 {
+    font-size: 1rem;
+  }
+
+  .service-card p {
+    font-size: 12.5px;
   }
 }

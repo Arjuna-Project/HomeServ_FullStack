@@ -91,25 +91,44 @@
   box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
 }
 
-/* -------------------------------------------------
-   RESPONSIVE
-   ------------------------------------------------- */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .success-container {
-    padding: 20px;
+    padding: 40px 16px;
   }
   .success-card {
-    padding: 32px 24px;
+    padding: 44px 28px;
   }
   .checkmark-circle {
-    width: 80px;
-    height: 80px;
+    width: 84px;
+    height: 84px;
     font-size: 40px;
   }
+}
+
+@media (max-width: 480px) {
+  .success-container {
+    padding: 30px 12px;
+  }
+  .success-card {
+    padding: 36px 20px;
+    border-radius: 16px;
+  }
+  .checkmark-circle {
+    width: 74px;
+    height: 74px;
+    font-size: 36px;
+  }
   .success-card h1 {
-    font-size: 22px;
+    font-size: 1.2rem;
   }
   .success-card h2 {
-    font-size: 20px;
+    font-size: 1.1rem;
+  }
+  .success-card p {
+    font-size: 14px;
+  }
+  .btn-back {
+    font-size: 14px;
+    padding: 10px 26px;
   }
 }

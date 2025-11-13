@@ -128,25 +128,55 @@
   box-shadow: 0 6px 16px rgba(59, 130, 246, 0.1);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .confirm-container {
-    padding: 40px 20px;
+    padding: 40px 16px;
   }
+}
+
+@media (max-width: 600px) {
   .checkmark-circle {
     width: 80px;
     height: 80px;
     font-size: 40px;
   }
+
   .confirm-content h2 {
-    font-size: 24px;
+    font-size: 1.6rem;
   }
+
+  .confirm-content p {
+    font-size: 14px;
+  }
+
+  .details-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .details-card h3 {
+    font-size: 16px;
+  }
+
   .action-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
+
   .btn-primary,
   .btn-secondary {
     width: 100%;
-    max-width: 200px;
+    max-width: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  .details-card {
+    padding: 24px 16px;
+  }
+
+  .confirm-content h2 {
+    font-size: 1.4rem;
   }
 }

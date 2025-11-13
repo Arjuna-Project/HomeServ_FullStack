@@ -96,9 +96,74 @@
   box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 40px 16px;
+  }
+
   .signup-card {
-    padding: 32px 24px;
-    margin: 16px;
+    max-width: 380px;
+    padding: 36px 28px;
+  }
+
+  .signup-card h1 {
+    font-size: 24px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-page {
+    padding: 0;
+  }
+
+  .page-wrapper {
+    padding: 20px;
+  }
+
+  .signup-card {
+    padding: 28px 20px;
+    margin: 0 8px;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .signup-card h1 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .signup-form input {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .signup-card {
+    padding: 24px 16px;
+  }
+
+  .signup-form {
+    gap: 12px;
+  }
+
+  .btn-primary {
+    font-size: 13px;
+    padding: 9px;
   }
 }

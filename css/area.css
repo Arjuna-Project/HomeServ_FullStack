@@ -51,6 +51,7 @@
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .area-card:hover {
@@ -60,7 +61,7 @@
 
 .area-card img {
   width: 100%;
-  height: 120px;
+  height: 140px;
   object-fit: cover;
 }
 
@@ -70,6 +71,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: center;
 }
 
 .area-info h3 {
@@ -82,8 +84,8 @@
 .area-info p {
   font-size: 13px;
   color: #64748b;
-  margin: 0 0 12px 0;
-  line-height: 1.4;
+  margin: 0 0 16px 0;
+  line-height: 1.5;
 }
 
 .area-info p strong {
@@ -95,12 +97,14 @@
   color: white;
   font-weight: 500;
   font-size: 14px;
-  padding: 8px 16px;
+  padding: 10px 22px;
   border-radius: 999px;
   text-decoration: none;
   text-align: center;
   transition: all 0.2s;
-  align-self: flex-start;
+  align-self: center;   
+  margin-top: 10px;     
+  min-width: 120px;     
 }
 
 .btn-select:hover {
@@ -133,13 +137,35 @@
 }
 
 @media (max-width: 600px) {
+  .area-container {
+    padding: 30px 16px;
+  }
+
   .areas-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-  .area-container {
-    padding: 20px 0;
+
+  .area-card img {
+    height: 110px;
   }
+
+  .btn-select {
+    font-size: 13.5px;
+    padding: 9px 18px;
+  }
+}
+
+@media (max-width: 400px) {
   .area-card img {
     height: 100px;
+  }
+
+  .area-info h3 {
+    font-size: 16px;
+  }
+
+  .area-info p {
+    font-size: 13px;
   }
 }
